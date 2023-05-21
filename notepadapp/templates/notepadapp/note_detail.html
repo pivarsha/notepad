@@ -14,10 +14,8 @@
               <a href="{% url 'notepadapp:note_list' %}" class="flex-grow text-indigo-500 border-b-2 border-indigo-500 py-2 text-lg px-1">
                   Overview
               </a>
-              <!-- <a href="{% url 'notesapp:note_detail' notes.pk %}" class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1">
-                  Category
-              </a> -->
-              <a href="{% url 'notepadapp:note_update' notes.pk %}" class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1">
+             
+              <a href="{% url 'notepadapp:note_update' note.pk %}" class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1">
                   Update Details
               </a>    
           </div>
@@ -26,14 +24,7 @@
               <span class="text-gray-500">Created at</span>
               <span class="ml-auto text-gray-900">{{ note.date_created }}</span>
           </div>
-          <!-- <div class="flex border-t border-gray-300 py-2">
-              <span class="text-gray-500">Email</span>
-              <span class="ml-auto text-gray-900">{{ notes.email }}</span>
-          </div> -->
-          <!-- <div class="flex border-t border-b mb-6 border-gray-300 py-2">
-              <span class="text-gray-500">Phone Number</span>
-              <span class="ml-auto text-gray-900">{{ lead.phone_number }}</span>
-          </div> -->
+         
       </div>
     </div>
   </div>

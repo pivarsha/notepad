@@ -124,11 +124,11 @@ STATICFILES_DIRS = [
 ]
 
 
-LOGIN_URL = 'login'
+LOGIN_URL = 'notepadapp:login'
 STATIC_ROOT = "static_root"
 
-LOGIN_REDIRECT_URL = 'notepadapp:notes_list'
-# LOGOUT_REDIRECT_URL = 'notepadapp:login'
+LOGIN_REDIRECT_URL = 'notepadapp:note_list'
+LOGOUT_REDIRECT_URL = 'notepadapp:login'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
